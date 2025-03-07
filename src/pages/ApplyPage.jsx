@@ -29,7 +29,7 @@ const ApplyPage = () => {
     formData.append("resume", resume); // إضافة الملف إلى FormData
     console.log(formData);
     try {
-      const response = await fetch("http://localhost:5000/api/applications", {
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}api/applications`, {
         method: "POST",
         body: formData, // إرسال FormData
       });
