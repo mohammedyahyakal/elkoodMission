@@ -47,7 +47,9 @@ const RegisterPage = () => {
     <div className="min-h-screen flex items-center justify-center">
       <Toaster position="top-center" reverseOrder={false} />
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-4">تسجيل مستخدم جديد</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center">
+          تسجيل مستخدم جديد
+        </h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
             <label className="block">اسم المستخدم</label>
